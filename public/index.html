@@ -2,32 +2,61 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Drivy</title>
+	<link href="StyleQuestionnaire.css" media="screen,projection" rel="stylesheet" type="text/css" />
   </head>
   <body>
+  
+	<li id="bande"><h3>***	Questionnaire	***</h3></li>
+	<h2> About the car </h2>
+	<img height="60 " width="60"src="transport-1.PNG"/>
     <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
+	<h1> Car model : </h1>
+      <input class="model" type="text" placeholder="Car model "/>
+	  </br></br>
+	<h1> Price-by-day : </h1>
+      <input class="price-by-day" type="number" placeholder="Price by day" />
+	  </br></br>
+	<h1> Price-by-km : </h1>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
+	  </br></br>
     </div>
+	<h2> About the rental </h2>
+	<img height="60 " width="60"src="transport.PNG"/>
     <div id="rental">
+		<h1> Rental begin date : </h1>
       <input class="begin" type="date" placeholder="Rental begin date"/>
+	  </br></br>
+	  <h1> Rental end date : </h1>
       <input class="end" type="date" placeholder="Rental end date"/>
+	  </br></br>
+	  <h1> Distance in km : </h1>
       <input class="distance" type="number" placeholder="Distance in km"/>
+	  </br></br>
+	  <h1> Deductible option : </h1>
       <input class="option" type="checkbox" placeholder="Deductible option"/>
     </div>
-    <button id="compute">Compute</button>
+	</br></br>
+	
+	
+    <button href="#" id="compute" >Compute</button>
+	&nbsp;
+	&nbsp;
+	<img height="60 " width="60"src="interface.PNG"/>
     <div id="actors"></div>
     <script id="template" type="x-tmpl-mustache">
       {{#actors}}
-        <div class="actor">
+	  
+        <div class="actor"><h5>
           <span>{{who}}</span>
           <span>{{type}}</span>
-          <span>{{amount}}</span>
+          <span>{{amount}}</span></h5>
         </div>
       {{/actors}}
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
     <script src="drivy.js"></script>
     <script src="index.js"></script>
+	<p>
+	<img height="190 " width="290" src="voiture.JPG"/></p> 
   </body>
 </html>
